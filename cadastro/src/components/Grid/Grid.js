@@ -31,7 +31,7 @@ export const Th = styled.th`
   }
 `;
 
-export const Td = styled.th`
+export const Td = styled.td`
   padding-top: 15px;
   text-align: ${(props) => (props.alignCenter ? "center" : "start")};
   width: ${(props) => (props.width ? props.width : "auto")};
@@ -87,7 +87,6 @@ function Grid({ users, setUsers, setOnEdit }) {
             </Td>
           </Tr>
         ))}
-
       </Tbody>
     </Table>
   );
